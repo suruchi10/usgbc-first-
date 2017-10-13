@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.usgbc.dev.regression.CommunityRegistrationTest"/>
+      <class name="com.usgbc.dev.regression.CommunityRegistrationCountryFieldTest"/> 
+      <class name="com.usgbc.dev.regression.UsgbcCoreTest"/>
+      <class name="com.usgbc.dev.regression.LoggedUserTest"/>
+      <class name="com.usgbc.dev.regression.ErrorMessageCommRegTest"/>
+      <class name="com.usgbc.dev.regression.UsgbcStoreTest"/>
+      <class name="com.usgbc.dev.regression.StoreTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
