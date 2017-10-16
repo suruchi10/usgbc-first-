@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25003" started-at="2017-10-13T11:30:22Z" finished-at="2017-10-13T11:30:47Z">
+  <suite name="Default suite" duration-ms="205273" started-at="2017-10-16T10:25:21Z" finished-at="2017-10-16T10:28:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25003" started-at="2017-10-13T11:30:22Z" finished-at="2017-10-13T11:30:47Z">
-      <class name="com.usgbc.dev.regression.ErrorMessageCommRegTest">
-        <test-method status="PASS" signature="getDriver()[pri:0, instance:com.usgbc.dev.regression.ErrorMessageCommRegTest@6a4f787b]" name="getDriver" is-config="true" duration-ms="6717" started-at="2017-10-13T17:00:22Z" finished-at="2017-10-13T17:00:28Z">
+    <test name="Default test" duration-ms="205273" started-at="2017-10-16T10:25:21Z" finished-at="2017-10-16T10:28:46Z">
+      <class name="com.usgbc.dev.regression.UsgbcStoreTest">
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:com.usgbc.dev.regression.UsgbcStoreTest@6a4f787b]" name="getDriver" is-config="true" duration-ms="7611" started-at="2017-10-16T15:55:21Z" finished-at="2017-10-16T15:55:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method status="PASS" signature="testErrorMessagesCommRegCondition3()[pri:0, instance:com.usgbc.dev.regression.ErrorMessageCommRegTest@6a4f787b]" name="testErrorMessagesCommRegCondition3" duration-ms="18052" started-at="2017-10-13T17:00:28Z" finished-at="2017-10-13T17:00:46Z">
+        <test-method status="PASS" signature="testUsgbcStore2()[pri:0, instance:com.usgbc.dev.regression.UsgbcStoreTest@6a4f787b]" name="testUsgbcStore2" duration-ms="195843" started-at="2017-10-16T15:55:28Z" finished-at="2017-10-16T15:58:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testErrorMessagesCommRegCondition3 -->
-        <test-method status="PASS" signature="closeDriver(org.testng.ITestResult)[pri:0, instance:com.usgbc.dev.regression.ErrorMessageCommRegTest@6a4f787b]" name="closeDriver" is-config="true" duration-ms="234" started-at="2017-10-13T17:00:46Z" finished-at="2017-10-13T17:00:47Z">
+        </test-method> <!-- testUsgbcStore2 -->
+        <test-method status="PASS" signature="closeDriver(org.testng.ITestResult)[pri:0, instance:com.usgbc.dev.regression.UsgbcStoreTest@6a4f787b]" name="closeDriver" is-config="true" duration-ms="1812" started-at="2017-10-16T15:58:44Z" finished-at="2017-10-16T15:58:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testErrorMessagesCommRegCondition3 status=SUCCESS method=ErrorMessageCommRegTest.testErrorMessagesCommRegCondition3()[pri:0, instance:com.usgbc.dev.regression.ErrorMessageCommRegTest@6a4f787b] output={null}]]]>
+                <![CDATA[[TestResult name=testUsgbcStore2 status=SUCCESS method=UsgbcStoreTest.testUsgbcStore2()[pri:0, instance:com.usgbc.dev.regression.UsgbcStoreTest@6a4f787b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- com.usgbc.dev.regression.ErrorMessageCommRegTest -->
+      </class> <!-- com.usgbc.dev.regression.UsgbcStoreTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

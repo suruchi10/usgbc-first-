@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.usgbc.dev.regression.ErrorMessageCommRegTest">
+      <class name="com.usgbc.dev.regression.UsgbcStoreTest">
         <methods>
           <include name="getDriver"/>
-          <include name="testErrorMessagesCommRegCondition3"/>
+          <include name="testUsgbcStore"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- com.usgbc.dev.regression.ErrorMessageCommRegTest -->
+      </class> <!-- com.usgbc.dev.regression.UsgbcStoreTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
