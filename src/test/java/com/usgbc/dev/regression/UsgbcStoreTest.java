@@ -15,7 +15,7 @@ public class UsgbcStoreTest extends Base {
 		 driver.get(url);
 		 System.out.println("Usgbc Store Module");
 		 System.out.println("Broken Link for store/contact ");
-	     BrokenLink.BrokenLinkCheck(url);
+	     //BrokenLink.BrokenLinkCheck(url);
 	     UsgbcStore usgbcStore = PageFactory.initElements(driver, UsgbcStore.class);    
 		    try {
 		    	test= extent.startTest("Usgbc Store Module");

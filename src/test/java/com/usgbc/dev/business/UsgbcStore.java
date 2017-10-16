@@ -17,16 +17,21 @@ public class UsgbcStore extends UsgbcWebLocators {
 		getUsgbcStore().click();
 		Thread.sleep(3000);
 		String storeContact_url =driver.getCurrentUrl();
+		//System.out.println(storeContact_url);
 		Thread.sleep(3000);
-			if(storeContact_url.equalsIgnoreCase("http://test-dynamic-usgbc.pantheonsite.io/store/contact") && getStatusMessage().isDisplayed()) {
-		    Assert.assertTrue(getStatusMessage().getText().contains("No items are added to the cart"));
-			System.out.println("No items are added to the cart");
-			}
+		 if (storeContact_url.equals("https://test-dynamic-usgbc.pantheonsite.io/store/contact")&& getStatusMessage().isDisplayed()) {
+			 Assert.assertTrue(getStatusMessage().getText().contains("No items are added to the cart"));
+			 System.out.println("No Items are added to the cart");
+		 }
+		 else
+		 {
+			 System.out.println(" It is going to else condition ");
+		 }
 	}
 	
 	/*----------------------------------------*/
+	
 	public void Contact_Form(String sheetName, int rowNum) throws InterruptedException {
-		
 		
 		String Attention= reader.getCellData(sheetName, "Attention",rowNum); 
 		String Company= reader.getCellData(sheetName, "Company", rowNum);
@@ -58,7 +63,7 @@ public class UsgbcStore extends UsgbcWebLocators {
 		
 	}
 	
-public void paymentForm(String sheetName, int rowNum) throws InterruptedException {
+  public void paymentForm(String sheetName, int rowNum) throws InterruptedException {
 		
 		String name_on_card= reader.getCellData(sheetName, "name_on_card",rowNum); 
 		String card_number= reader.getCellData(sheetName, "card number", rowNum);

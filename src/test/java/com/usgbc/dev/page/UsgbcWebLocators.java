@@ -20,6 +20,10 @@ public class UsgbcWebLocators extends Base{
 	}
 		
    /* web element locator for community_registration page*/
+	 @FindBy(linkText="Community Registration")WebElement communityRegistration;
+		public WebElement getcommunityRegistration() {
+			return communityRegistration;
+			}
 	
     public static By Community_Name = By.id ("edit-community-name");
     public static WebElement getCommunity_Name() {
@@ -55,7 +59,7 @@ public class UsgbcWebLocators extends Base{
     	return driver.findElement(City);
     }
     
-    public static By Zip_code = By.name("address[postal_code]");
+    public static By Zip_code = By.xpath(".//*[@name='address[postal_code]']");
     public static WebElement getZip_code() {
     	return driver.findElement(Zip_code);
     }
@@ -163,7 +167,7 @@ public class UsgbcWebLocators extends Base{
   	public WebElement getRegister() {
   			return driver.findElement(register);
   			}
-  	 @FindBy(xpath="html/body/div[1]/div/div/div/div/div/h2")WebElement status_message_signup;
+  	@FindBy(xpath="html/body/div[1]/div/div/div/div/div/h2")WebElement status_message_signup;
   	public WebElement getstatusMessageSignup() {
 			return status_message_signup;
 			}

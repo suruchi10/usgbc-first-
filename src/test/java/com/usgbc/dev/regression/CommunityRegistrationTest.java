@@ -5,6 +5,7 @@ import com.usgbc.dev.business.CommunityRegistration;
 import com.usgbc.utility.Base;
 import com.usgbc.utility.BrokenLink;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CommunityRegistrationTest extends Base {
@@ -13,11 +14,11 @@ public class CommunityRegistrationTest extends Base {
 	@Test
 	public void testCommunityRegistration() throws Exception {
 		
-		String url ="https://test-dynamic-usgbc.pantheonsite.io/community/registration";
+		String url ="https://test-dynamic-usgbc.pantheonsite.io";
 		driver.get(url);
 		System.out.println("Communtiy Registration Module");
-		System.out.println("Broken Link for communtiy/registration ");
-		BrokenLink.BrokenLinkCheck(url);
+		System.out.println("Broken Link for / ");
+		//BrokenLink.BrokenLinkCheck(url);
 	    CommunityRegistration communityRegistration = PageFactory.initElements(driver, CommunityRegistration.class);    
 	    try {
 	    	test= extent.startTest("Communtiy Registration Module");

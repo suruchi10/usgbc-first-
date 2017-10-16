@@ -6,9 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import com.usgbc.dev.page.UsgbcWebLocators;
+import com.usgbc.utility.Base;
 import com.usgbc.utility.BrokenLink;
 import com.usgbc.utility.CommunityRegistrationFormData;
 
@@ -83,11 +86,16 @@ public class CommunityRegistration extends UsgbcWebLocators{
 	
 	
 	public void CommunityRegistartionModule() throws Exception {
-	
+		
+		getcommunityRegistration().click();
+		//Thread.sleep(3000);
+		String communityRegistration_url = driver.getCurrentUrl();
+		Assert.assertEquals(communityRegistration_url, "https://test-dynamic-usgbc.pantheonsite.io/community/registration");
+		System.out.println("Broken Link for community/registration ");
+		//BrokenLink.BrokenLinkCheck(communityRegistration_url);
 		CommunityRegistrationFormData.CommmunityRegistrationForm();
 	    String signin_url = driver.getCurrentUrl();
-       	
-		  if (signin_url.equalsIgnoreCase("https://test-dynamic-usgbc.pantheonsite.io/signin")){
+		if (signin_url.equalsIgnoreCase("https://test-dynamic-usgbc.pantheonsite.io/signin") && driver.getTitle().contains("Sign-in")){
 			   Assert.assertTrue(true);
 			   System.out.println("Test Passed,session created and  order id generated ");
 			   System.out.println("Broken Link for /signin ");
