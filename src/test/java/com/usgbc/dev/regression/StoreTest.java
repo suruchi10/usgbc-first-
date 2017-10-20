@@ -15,6 +15,7 @@ public class StoreTest extends Base {
 		 String url ="http://test-dynamic-usgbc.pantheonsite.io/store";
 		 driver.get(url);
 		 System.out.println("Store Module Test");
+		 System.out.println("Broken Link for /store ");
 		 BrokenLink.BrokenLinkCheck(url);
 	     Store store = PageFactory.initElements(driver, Store.class);    
 		    try {

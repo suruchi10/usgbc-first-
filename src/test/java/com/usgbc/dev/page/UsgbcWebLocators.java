@@ -119,6 +119,12 @@ public class UsgbcWebLocators extends Base{
     	return driver.findElement(Terms);
     }
     
+    public static By website = By.id ("edit-how-did-you-hear-2");
+    public static  WebElement getWebsite() {
+    	return driver.findElement(website);
+    }
+    
+    
     public static By Other = By.id ("edit-how-did-you-hear-5");
     public static  WebElement getOther() {
     	return driver.findElement(Other);
@@ -309,30 +315,40 @@ public class UsgbcWebLocators extends Base{
 	   			return usgbc_store;
 	   			}
 	    
-	    @FindBy(xpath="html/body/div[1]/div/div/div/div/pre")WebElement Status_message ;
-	   	public WebElement getStatusMessage() {
-	   			return Status_message;
+	    @FindBy(xpath="html/body/div[1]/div/div/div/div/pre")WebElement Status_message_No_items_added ;
+	   	public WebElement getStatusMessageNoItemsAdded() {
+	   			return Status_message_No_items_added ;
 	   			}
 	    
-	    @FindBy(linkText="Green Apple Lapel Pins")WebElement GreenAppleLapelPins;
+	   	
+	    @FindBy(xpath=".//*[@id='block-drupal8-zymphonies-theme-content']/div/div/div/div/div[3]/div/span/a/div")WebElement GreenAppleLapelPins;
 	   	public WebElement getGreenAppleLapelPins() {
 	   			return GreenAppleLapelPins;
 	   			}
-	   	
-	   	
-	   	@FindBy(id="edit-submit-30")WebElement Add_to_cart;
-	   	public WebElement getAddToCart() {
-	   			return Add_to_cart;
+	   
+	    @FindBy(linkText="LEED Reference Guide for Homes Design and Construction (e-document)")WebElement LEED_Reference;
+	   		   	public WebElement getLEED_Reference() {
+	   		   			return LEED_Reference;
+	   		   			}
+	   		   	
+	   	@FindBy(xpath=".//*[@id='edit-submit-33']")public  static WebElement  Add_to_cart_LEED;
+	   	public static WebElement getAddToCartLEED() {
+	   			return Add_to_cart_LEED;
 	   			}
 	   	
-	 	@FindBy(xpath="html/body/div[1]/div/div/div/div")WebElement status_message1;
-	   	public WebElement getStatusMessage1() {
-	   			return status_message1;
+	 	@FindBy(xpath=".//*[@id='edit-submit-31']")public  static WebElement  Add_to_cart_Green;
+	   	public static WebElement getAddToCartGreen() {
+	   			return Add_to_cart_Green;
 	   			}
 	   	
-	   	@FindBy(xpath="html/body/div[1]/div/div/div/div/strong")WebElement status_message2;
-	   	public WebElement getStatusMessage2() {
-	   			return status_message2;
+	 	@FindBy(xpath="html/body/div[1]/div/div/div/div")WebElement Status_message_block;
+	   	public WebElement getStatusMessageBlock() {
+	   			return Status_message_block;
+	   			}
+	   	
+	   	@FindBy(xpath="html/body/div[1]/div/div/div/div/strong")WebElement Status_message;
+	   	public WebElement getStatusMessage() {
+	   			return Status_message;
 	   			}
 	   	
 	 	@FindBy(xpath=".//*[@id='edit-actions']/div/a")WebElement checkoutButton;
