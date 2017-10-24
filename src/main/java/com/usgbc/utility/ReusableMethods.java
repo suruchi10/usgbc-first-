@@ -77,15 +77,14 @@ public class ReusableMethods extends UsgbcWebLocators{
 		 }else if (reciept_url.equals("https://test-dynamic-usgbc.pantheonsite.io/usgbc/payment")) {
 			  Assert.assertTrue(true);
 			  System.out.println("Error in payment form submission. ");  	
-	     }else {
-	         reciept_url.equals("https://test-dynamic-usgbc.pantheonsite.io/payment/reciept");
+	     }else {  
+	          reciept_url.equals("https://test-dynamic-usgbc.pantheonsite.io/payment/reciept");
 			  Assert.assertTrue(true);
 			  System.out.println("Broken Link for /Payment/reciept ");
 			  BrokenLink.BrokenLinkCheck(reciept_url);
 			  getprint_Receipt().click();
 	          System.out.println("Receipt downloaded ");
-			  }
-		   	
+			  }   	
 	}
 	
 	public void contactPaymentReceipt() throws Exception {

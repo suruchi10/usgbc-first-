@@ -239,7 +239,7 @@ public class UsgbcWebLocators extends Base{
    }
 	 
 	  /*web element locator for reciept page */
-	  
+	 
 	   public By  print_Receipt = By.xpath(".//*[@id='edit-submit-button-1-submit']");
 	  	public WebElement getprint_Receipt() {
 	  			return driver.findElement(print_Receipt);
@@ -314,6 +314,10 @@ public class UsgbcWebLocators extends Base{
 	   	public WebElement getUsgbcStore() {
 	   			return usgbc_store;
 	   			}
+	   	@FindBy(xpath=".//*[@id='edit-actions']/div/a")WebElement checkoutButton;
+	   	public WebElement getCheckOutButton() {
+	   			return checkoutButton;
+	   			}
 	    
 	    @FindBy(xpath="html/body/div[1]/div/div/div/div/pre")WebElement Status_message_No_items_added ;
 	   	public WebElement getStatusMessageNoItemsAdded() {
@@ -340,21 +344,18 @@ public class UsgbcWebLocators extends Base{
 	   	public static WebElement getAddToCartGreen() {
 	   			return Add_to_cart_Green;
 	   			}
-	   	
+	   	//xpath for message block displayed
 	 	@FindBy(xpath="html/body/div[1]/div/div/div/div")WebElement Status_message_block;
 	   	public WebElement getStatusMessageBlock() {
 	   			return Status_message_block;
 	   			}
-	   	
+	    //xpath for message block messsage 
 	   	@FindBy(xpath="html/body/div[1]/div/div/div/div/strong")WebElement Status_message;
 	   	public WebElement getStatusMessage() {
 	   			return Status_message;
 	   			}
 	   	
-	 	@FindBy(xpath=".//*[@id='edit-actions']/div/a")WebElement checkoutButton;
-	   	public WebElement getCheckOutButton() {
-	   			return checkoutButton;
-	   			}
+	 	
 	   	
 	   	/* Store/contact  web locator */ 
 	   	
@@ -368,7 +369,7 @@ public class UsgbcWebLocators extends Base{
 	 	@FindBy(xpath=".//*[@id='edit-submit']" )WebElement Contact_Continue;
 	 	
 	 	@FindBy(xpath="html/body/div[1]/div/div/div/div[2]/div" )WebElement status_message_usgbc_payment;
-		public WebElement getstatusMessageUsgbcPayment() {
+	 	public WebElement getstatusMessageUsgbcPayment() {
    			return status_message_usgbc_payment;
    			}
 	 	
@@ -388,6 +389,18 @@ public class UsgbcWebLocators extends Base{
     		Contact_Continue.click();
     		
     	}
-    	
+	 	
+	 	//Membership module
+	 	
+	 	
+		@FindBy(xpath=".//*[@id='usgbc-org-membership-contact-id']/div[2]/div/div[1]/div/div[1]/div/p/b/a" )WebElement membership_signin;
+	 	public WebElement getMembershipSignin() {
+   			return membership_signin;
+   			}
+	 	@FindBy(xpath="html/body/div[1]/div/div/div/div/div" )WebElement user_doesnot_exist;
+	 	public WebElement getUserNotExist() {
+   			return  user_doesnot_exist;
+   			}
+	 	
 	   			
 }

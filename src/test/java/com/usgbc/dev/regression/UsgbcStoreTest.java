@@ -9,6 +9,8 @@ import com.usgbc.utility.Base;
 import com.usgbc.utility.BrokenLink;
 
 public class UsgbcStoreTest extends Base {
+	
+	//No items in cart
 	@Test	
 	public void testUsgbcStore() throws Exception {
 		
@@ -31,13 +33,13 @@ public class UsgbcStoreTest extends Base {
 			 }	
 	}
 	
-	//Green with the test25@testuser.com 
+	//Green with user  test25@testuser.com, usgbc store link and  receipt download 
 	@Test	
 	public void testUsgbcStoreGreen() throws Exception {
 	
 		 String url ="https://test-dynamic-usgbc.pantheonsite.io/";
 		 driver.get(url);
-		 System.out.println("Usgbc Store Module scenario 2");
+		 System.out.println("Usgbc Store Module Green Apple Lapel Pins");
 		 System.out.println("Broken Link for / ");
 	     BrokenLink.BrokenLinkCheck(url);
 	     UsgbcStore usgbcStore = PageFactory.initElements(driver, UsgbcStore.class);    
@@ -54,7 +56,7 @@ public class UsgbcStoreTest extends Base {
 			 }	
 	}
 	
-	//Green user not found
+	//Green with user not found , checkout button and no receipt download
 	@Test	
 	public void testUsgbcStoreGreen2() throws Exception {
 	
@@ -78,6 +80,7 @@ public class UsgbcStoreTest extends Base {
 		
 	}
 	
+	//LEED with user  test25@testuser.com, usgbc store link and  receipt download 
 	@Test	
 	public void testUsgbcStoreLEED() throws Exception {
 		
@@ -100,6 +103,7 @@ public class UsgbcStoreTest extends Base {
 			 }	
 	}
 	
+   // LEED with user not found , checkout button and no receipt download
 	@Test	
 	public void testUsgbcStoreLEED2() throws Exception {
 		
