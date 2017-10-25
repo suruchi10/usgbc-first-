@@ -10,6 +10,7 @@
       <class name="com.usgbc.dev.regression.ErrorMessageCommRegTest"/>
       <class name="com.usgbc.dev.regression.UsgbcStoreTest"/>
       <class name="com.usgbc.dev.regression.StoreTest"/>
+      <class name="com.usgbc.dev.regression.MembershipTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

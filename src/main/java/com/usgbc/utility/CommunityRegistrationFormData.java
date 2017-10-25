@@ -17,7 +17,6 @@ public class CommunityRegistrationFormData extends UsgbcWebLocators {
 
 	public static void CommmunityRegistrationForm() throws InterruptedException {
 		
-		
 		//for selecting community name
 	
 		Select community = new Select(getCommunity_Name());
