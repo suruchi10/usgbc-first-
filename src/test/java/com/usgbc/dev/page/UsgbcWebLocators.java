@@ -386,21 +386,17 @@ public class UsgbcWebLocators extends Base{
     		shipping_address_line2.sendKeys(s_address_line2);
     		Contact_City.sendKeys(city);
     		how_did_you_hear.click();
-    		Contact_Continue.click();
-    		
+    		Contact_Continue.click();	
     	}
 	 	
 	 	//Membership module
 	 	
-	 	
-		@FindBy(xpath=".//*[@id='usgbc-org-membership-contact-id']/div[2]/div/div[1]/div/div[1]/div/p/b/a" )WebElement membership_signin;
+		@FindBy(xpath=".//*[@id='usgbc-org-membership-contact-id']/div[2]/div/div[1]/div/div[1]/div/p/b" )WebElement membership_signin;
 	 	public WebElement getMembershipSignin() {
    			return membership_signin;
    			}
 	 	@FindBy(xpath="html/body/div[1]/div/div/div/div/div" )WebElement user_doesnot_exist;
 	 	public WebElement getUserNotExist() {
    			return  user_doesnot_exist;
-   			}
-	 	
-	   			
+   			}	   			
 }
