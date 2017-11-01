@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 3 failed,   9 passed</span>
+                    <span class="method-stats">15 methods, 2 failed,   13 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,11 +107,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.usgbc.dev.regression.UsgbcCoreTest" hash-for-method="testUsgbcCore">testUsgbcCore</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.usgbc.dev.regression.UsgbcStoreTest" hash-for-method="testUsgbcStore2">testUsgbcStore2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -155,6 +150,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.usgbc.dev.regression.MembershipTest" hash-for-method="testMembership">testMembership</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.usgbc.dev.regression.StoreTest" hash-for-method="testStore">testStore</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -165,7 +165,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.usgbc.dev.regression.UsgbcStoreTest" hash-for-method="testUsgbcStore3">testUsgbcStore3</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.usgbc.dev.regression.UsgbcStoreTest" hash-for-method="testUsgbcStoreGreen">testUsgbcStoreGreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.usgbc.dev.regression.UsgbcStoreTest" hash-for-method="testUsgbcStoreGreen2">testUsgbcStoreGreen2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.usgbc.dev.regression.UsgbcStoreTest" hash-for-method="testUsgbcStoreLEED">testUsgbcStoreLEED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.usgbc.dev.regression.UsgbcStoreTest" hash-for-method="testUsgbcStoreLEED2">testUsgbcStoreLEED2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -191,52 +206,10 @@
                   <a name="testUsgbcCore">
                   </a> <!-- testUsgbcCore -->
                   <span class="method-name">testUsgbcCore</span>
-                  <div class="stack-trace">java.lang.Error: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;edit-existinguser-usernamae&quot;}
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;G10GGNLT049&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: fe1f05ba-9093-43f3-ad51-088d51cd686f
-*** Element info: {Using=id, value=edit-existinguser-usernamae}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy5.click(Unknown Source)
-	at com.usgbc.dev.page.UsgbcWebLocators.signin_usgbc(UsgbcWebLocators.java:174)
-	at com.usgbc.dev.business.UsgbcCore.signInForm(UsgbcCore.java:24)
-	at com.usgbc.dev.business.UsgbcCore.UsgbcCoreForm(UsgbcCore.java:99)
+                  <div class="stack-trace">java.lang.Error: expected [https://test-dynamic-usgbc.pantheonsite.io/notauthorized] but found [https://test-dynamic-usgbc.pantheonsite.io/usgbc/payment]
+	at com.usgbc.dev.business.UsgbcCore.UsgbcCoreForm(UsgbcCore.java:120)
 	at com.usgbc.dev.regression.UsgbcCoreTest.testUsgbcCore(UsgbcCoreTest.java:26)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.usgbc.dev.regression.UsgbcStoreTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUsgbcStore2">
-                  </a> <!-- testUsgbcStore2 -->
-                  <span class="method-name">testUsgbcStore2</span>
-                  <div class="stack-trace">java.lang.Error: expected [true] but found [false]
-	at com.usgbc.dev.business.UsgbcStore.receiptdownload(UsgbcStore.java:84)
-	at com.usgbc.dev.business.UsgbcStore.contactPaymentReceipt(UsgbcStore.java:139)
-	at com.usgbc.dev.business.UsgbcStore.UsgbcStoreModule2(UsgbcStore.java:153)
-	at com.usgbc.dev.regression.UsgbcStoreTest.testUsgbcStore2(UsgbcStoreTest.java:45)
-... Removed 37 stack frames
+... Removed 38 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -253,28 +226,24 @@ Session ID: fe1f05ba-9093-43f3-ad51-088d51cd686f
                   <a name="testLoggedUser2">
                   </a> <!-- testLoggedUser2 -->
                   <span class="method-name">testLoggedUser2</span>
-                  <div class="stack-trace">java.lang.Error: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;edit-existinguser-usernamae&quot;}
+                  <div class="stack-trace">java.lang.Error: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Community Registration&quot;}
 Command duration or timeout: 16 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;G10GGNLT049&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 44e2f87f-31b3-4e27-86c3-717fa731f884
-*** Element info: {Using=id, value=edit-existinguser-usernamae}
+Session ID: 2cce95e2-391d-41a5-8c3c-6f04f9866b4d
+*** Element info: {Using=link text, value=Community Registration}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy5.click(Unknown Source)
-	at com.usgbc.dev.page.UsgbcWebLocators.signin_usgbc(UsgbcWebLocators.java:174)
-	at com.usgbc.dev.business.LoggedUser.signInForm(LoggedUser.java:39)
-	at com.usgbc.dev.business.LoggedUser.loggedUserVerification2(LoggedUser.java:47)
+	at com.usgbc.dev.page.UsgbcWebLocators.getCommunityRegistration(UsgbcWebLocators.java:258)
+	at com.usgbc.dev.business.LoggedUser.loggedUserVerification2(LoggedUser.java:39)
 	at com.usgbc.dev.regression.LoggedUserTest.testLoggedUser2(LoggedUserTest.java:47)
 ... Removed 37 stack frames
 </div> <!-- stack-trace -->
@@ -282,6 +251,21 @@ Session ID: 44e2f87f-31b3-4e27-86c3-717fa731f884
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.usgbc.dev.regression.MembershipTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMembership">
+                  </a> <!-- testMembership -->
+                  <span class="method-name">testMembership</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -297,9 +281,30 @@ Session ID: 44e2f87f-31b3-4e27-86c3-717fa731f884
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testUsgbcStore3">
-                  </a> <!-- testUsgbcStore3 -->
-                  <span class="method-name">testUsgbcStore3</span>
+                  <a name="testUsgbcStoreGreen">
+                  </a> <!-- testUsgbcStoreGreen -->
+                  <span class="method-name">testUsgbcStoreGreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUsgbcStoreGreen2">
+                  </a> <!-- testUsgbcStoreGreen2 -->
+                  <span class="method-name">testUsgbcStoreGreen2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUsgbcStoreLEED">
+                  </a> <!-- testUsgbcStoreLEED -->
+                  <span class="method-name">testUsgbcStoreLEED</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUsgbcStoreLEED2">
+                  </a> <!-- testUsgbcStoreLEED2 -->
+                  <span class="method-name">testUsgbcStoreLEED2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -366,21 +371,6 @@ Session ID: 44e2f87f-31b3-4e27-86c3-717fa731f884
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.usgbc.dev.regression.CommunityRegistrationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCommunityRegistration">
-                  </a> <!-- testCommunityRegistration -->
-                  <span class="method-name">testCommunityRegistration</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.usgbc.dev.regression.StoreTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -389,6 +379,21 @@ Session ID: 44e2f87f-31b3-4e27-86c3-717fa731f884
                   <a name="testStore">
                   </a> <!-- testStore -->
                   <span class="method-name">testStore</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.usgbc.dev.regression.CommunityRegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCommunityRegistration">
+                  </a> <!-- testCommunityRegistration -->
+                  <span class="method-name">testCommunityRegistration</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -412,6 +417,7 @@ Session ID: 44e2f87f-31b3-4e27-86c3-717fa731f884
       &lt;class name=&quot;com.usgbc.dev.regression.ErrorMessageCommRegTest&quot;/&gt;
       &lt;class name=&quot;com.usgbc.dev.regression.UsgbcStoreTest&quot;/&gt;
       &lt;class name=&quot;com.usgbc.dev.regression.StoreTest&quot;/&gt;
+      &lt;class name=&quot;com.usgbc.dev.regression.MembershipTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -425,7 +431,7 @@ Session ID: 44e2f87f-31b3-4e27-86c3-717fa731f884
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (7 classes)</span>
+                <span class="test-name">Test (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -451,60 +457,72 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testUsgbcStore3')
+data.setCell(0, 1, 'testUsgbcStoreLEED')
 data.setCell(0, 2, 'com.usgbc.dev.regression.UsgbcStoreTest')
-data.setCell(0, 3, 128275);
+data.setCell(0, 3, 175586);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testCommunityRegistration')
 data.setCell(1, 2, 'com.usgbc.dev.regression.CommunityRegistrationTest')
-data.setCell(1, 3, 127615);
+data.setCell(1, 3, 175146);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testUsgbcStore2')
+data.setCell(2, 1, 'testUsgbcStoreGreen')
 data.setCell(2, 2, 'com.usgbc.dev.regression.UsgbcStoreTest')
-data.setCell(2, 3, 126040);
+data.setCell(2, 3, 173579);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testUsgbcStore')
+data.setCell(3, 1, 'testUsgbcStoreGreen2')
 data.setCell(3, 2, 'com.usgbc.dev.regression.UsgbcStoreTest')
-data.setCell(3, 3, 64919);
+data.setCell(3, 3, 133512);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testUsgbcCore')
-data.setCell(4, 2, 'com.usgbc.dev.regression.UsgbcCoreTest')
-data.setCell(4, 3, 53408);
+data.setCell(4, 1, 'testUsgbcStoreLEED2')
+data.setCell(4, 2, 'com.usgbc.dev.regression.UsgbcStoreTest')
+data.setCell(4, 3, 129198);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testStore')
-data.setCell(5, 2, 'com.usgbc.dev.regression.StoreTest')
-data.setCell(5, 3, 50405);
+data.setCell(5, 1, 'testUsgbcCore')
+data.setCell(5, 2, 'com.usgbc.dev.regression.UsgbcCoreTest')
+data.setCell(5, 3, 94325);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testErrorMessagesCommRegCondition3')
-data.setCell(6, 2, 'com.usgbc.dev.regression.ErrorMessageCommRegTest')
-data.setCell(6, 3, 17098);
+data.setCell(6, 1, 'testStore')
+data.setCell(6, 2, 'com.usgbc.dev.regression.StoreTest')
+data.setCell(6, 3, 36842);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testErrorMessagesCommRegCondition2')
-data.setCell(7, 2, 'com.usgbc.dev.regression.ErrorMessageCommRegTest')
-data.setCell(7, 3, 16678);
+data.setCell(7, 1, 'testMembership')
+data.setCell(7, 2, 'com.usgbc.dev.regression.MembershipTest')
+data.setCell(7, 3, 19382);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'testLoggedUser2')
 data.setCell(8, 2, 'com.usgbc.dev.regression.LoggedUserTest')
-data.setCell(8, 3, 13211);
+data.setCell(8, 3, 18758);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testErrorMessagesCommReg')
+data.setCell(9, 1, 'testErrorMessagesCommRegCondition3')
 data.setCell(9, 2, 'com.usgbc.dev.regression.ErrorMessageCommRegTest')
-data.setCell(9, 3, 10806);
+data.setCell(9, 3, 15915);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testLoggedUser')
-data.setCell(10, 2, 'com.usgbc.dev.regression.LoggedUserTest')
-data.setCell(10, 3, 7679);
+data.setCell(10, 1, 'testErrorMessagesCommRegCondition2')
+data.setCell(10, 2, 'com.usgbc.dev.regression.ErrorMessageCommRegTest')
+data.setCell(10, 3, 13294);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testCommunityRegistrationCountryField')
-data.setCell(11, 2, 'com.usgbc.dev.regression.CommunityRegistrationCountryFieldTest')
-data.setCell(11, 3, 0);
+data.setCell(11, 1, 'testErrorMessagesCommReg')
+data.setCell(11, 2, 'com.usgbc.dev.regression.ErrorMessageCommRegTest')
+data.setCell(11, 3, 10991);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testUsgbcStore')
+data.setCell(12, 2, 'com.usgbc.dev.regression.UsgbcStoreTest')
+data.setCell(12, 3, 8138);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testLoggedUser')
+data.setCell(13, 2, 'com.usgbc.dev.regression.LoggedUserTest')
+data.setCell(13, 3, 7805);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testCommunityRegistrationCountryField')
+data.setCell(14, 2, 'com.usgbc.dev.regression.CommunityRegistrationCountryFieldTest')
+data.setCell(14, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <span class="suite-total-time">Total running time: 16 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -537,167 +555,204 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCommunityRegistration</span>
-                <span class="method-start">7855 ms</span>
+                <span class="method-start">7096 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver([TestResult name=testCommunityRegistration status=SUCCESS method=CommunityRegistrationTest.testCommu...)</span>
-                <span class="method-start">135470 ms</span>
+                <span class="method-start">182243 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.usgbc.dev.regression.CommunityRegistrationCountryFieldTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">137869 ms</span>
+                <span class="method-start">184186 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCommunityRegistrationCountryField</span>
-                <span class="method-start">144031 ms</span>
+                <span class="method-start">189854 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver([TestResult name=testCommunityRegistrationCountryField status=SUCCESS method=CommunityRegistrationCo...)</span>
-                <span class="method-start">144031 ms</span>
+                <span class="method-start">189855 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.usgbc.dev.regression.UsgbcCoreTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">145470 ms</span>
+                <span class="method-start">190476 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testUsgbcCore</span>
-                <span class="method-start">150993 ms</span>
+                <span class="method-start">195211 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver([TestResult name=testUsgbcCore status=FAILURE method=UsgbcCoreTest.testUsgbcCore()[pri:0, instance:c...)</span>
-                <span class="method-start">204403 ms</span>
+                <span class="method-start">289551 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.usgbc.dev.regression.LoggedUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">205542 ms</span>
+                <span class="method-start">290370 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoggedUser</span>
-                <span class="method-start">215069 ms</span>
+                <span class="method-start">295330 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver([TestResult name=testLoggedUser status=SUCCESS method=LoggedUserTest.testLoggedUser()[pri:0, instanc...)</span>
-                <span class="method-start">222748 ms</span>
+                <span class="method-start">303135 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">223614 ms</span>
+                <span class="method-start">303728 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testLoggedUser2</span>
-                <span class="method-start">271822 ms</span>
+                <span class="method-start">308037 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver([TestResult name=testLoggedUser2 status=FAILURE method=LoggedUserTest.testLoggedUser2()[pri:0, insta...)</span>
-                <span class="method-start">285039 ms</span>
+                <span class="method-start">326811 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.usgbc.dev.regression.ErrorMessageCommRegTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">285714 ms</span>
+                <span class="method-start">328849 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testErrorMessagesCommReg</span>
-                <span class="method-start">292662 ms</span>
+                <span class="method-start">335082 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver([TestResult name=testErrorMessagesCommReg status=SUCCESS method=ErrorMessageCommRegTest.testErrorMes...)</span>
-                <span class="method-start">303469 ms</span>
+                <span class="method-start">346073 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">304478 ms</span>
+                <span class="method-start">346695 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testErrorMessagesCommRegCondition2</span>
-                <span class="method-start">309762 ms</span>
+                <span class="method-start">351409 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver([TestResult name=testErrorMessagesCommRegCondition2 status=SUCCESS method=ErrorMessageCommRegTest.te...)</span>
-                <span class="method-start">326440 ms</span>
+                <span class="method-start">364703 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">327329 ms</span>
+                <span class="method-start">365304 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testErrorMessagesCommRegCondition3</span>
-                <span class="method-start">333387 ms</span>
+                <span class="method-start">370041 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver([TestResult name=testErrorMessagesCommRegCondition3 status=SUCCESS method=ErrorMessageCommRegTest.te...)</span>
-                <span class="method-start">350485 ms</span>
+                <span class="method-start">385956 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.usgbc.dev.regression.UsgbcStoreTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">351235 ms</span>
+                <span class="method-start">386790 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUsgbcStore</span>
-                <span class="method-start">356273 ms</span>
+                <span class="method-start">391871 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver([TestResult name=testUsgbcStore status=SUCCESS method=UsgbcStoreTest.testUsgbcStore()[pri:0, instanc...)</span>
-                <span class="method-start">421192 ms</span>
+                <span class="method-start">400009 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">422316 ms</span>
+                <span class="method-start">400515 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testUsgbcStore2</span>
-                <span class="method-start">429096 ms</span>
+                <span class="method-name">testUsgbcStoreGreen</span>
+                <span class="method-start">405188 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeDriver([TestResult name=testUsgbcStore2 status=FAILURE method=UsgbcStoreTest.testUsgbcStore2()[pri:0, insta...)</span>
-                <span class="method-start">555137 ms</span>
+                <span class="method-name">closeDriver([TestResult name=testUsgbcStoreGreen status=SUCCESS method=UsgbcStoreTest.testUsgbcStoreGreen()[pri:...)</span>
+                <span class="method-start">578767 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">556444 ms</span>
+                <span class="method-start">579484 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testUsgbcStore3</span>
-                <span class="method-start">562773 ms</span>
+                <span class="method-name">testUsgbcStoreGreen2</span>
+                <span class="method-start">583958 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeDriver([TestResult name=testUsgbcStore3 status=SUCCESS method=UsgbcStoreTest.testUsgbcStore3()[pri:0, insta...)</span>
-                <span class="method-start">691048 ms</span>
+                <span class="method-name">closeDriver([TestResult name=testUsgbcStoreGreen2 status=SUCCESS method=UsgbcStoreTest.testUsgbcStoreGreen2()[pr...)</span>
+                <span class="method-start">717470 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getDriver</span>
+                <span class="method-start">718227 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUsgbcStoreLEED</span>
+                <span class="method-start">723276 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver([TestResult name=testUsgbcStoreLEED status=SUCCESS method=UsgbcStoreTest.testUsgbcStoreLEED()[pri:0,...)</span>
+                <span class="method-start">898862 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getDriver</span>
+                <span class="method-start">899726 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUsgbcStoreLEED2</span>
+                <span class="method-start">904383 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver([TestResult name=testUsgbcStoreLEED2 status=SUCCESS method=UsgbcStoreTest.testUsgbcStoreLEED2()[pri:...)</span>
+                <span class="method-start">1033581 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.usgbc.dev.regression.StoreTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">692225 ms</span>
+                <span class="method-start">1034544 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testStore</span>
-                <span class="method-start">699561 ms</span>
+                <span class="method-start">1039895 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver([TestResult name=testStore status=SUCCESS method=StoreTest.testStore()[pri:0, instance:com.usgbc.dev...)</span>
-                <span class="method-start">749966 ms</span>
+                <span class="method-start">1076737 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.usgbc.dev.regression.MembershipTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">getDriver</span>
+                <span class="method-start">1077354 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMembership</span>
+                <span class="method-start">1082638 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver([TestResult name=testMembership status=SUCCESS method=MembershipTest.testMembership()[pri:0, instanc...)</span>
+                <span class="method-start">1102020 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

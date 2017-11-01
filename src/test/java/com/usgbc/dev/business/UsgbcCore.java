@@ -5,56 +5,18 @@ import org.testng.Assert;
 import com.usgbc.dev.page.UsgbcWebLocators;
 import com.usgbc.utility.BrokenLink;
 import com.usgbc.utility.CommunityRegistrationFormData;
+import com.usgbc.utility.ReusableMethods;
 
 
 
-public class UsgbcCore extends UsgbcWebLocators{
+public class UsgbcCore extends ReusableMethods{
 
 
 	public UsgbcCore(WebDriver driver) {
 		super(driver);		
 	}
 	
-	public void signInForm(String sheetName, int rowNum) throws InterruptedException {
-		
-	
-		String Eemail= reader.getCellData(sheetName, "email",rowNum); 
-		String Epass= reader.getCellData(sheetName, "password", rowNum);
-		Thread.sleep(3000);
-		signin_usgbc(Eemail,Epass);
-	
-	}
-	
-	public void signUpForm(String sheetName, int rowNum) throws InterruptedException {
-		
-		
-			String fname= reader.getCellData(sheetName, "firstname",rowNum); 
-			String lname= reader.getCellData(sheetName, "lastname", rowNum);
-			String email= reader.getCellData(sheetName, "email", rowNum);
-			String pass= reader.getCellData(sheetName, "password", rowNum);
-			String cpass= reader.getCellData(sheetName, "cpassword", rowNum);
-			signup_usgbc(fname,lname,email,pass,cpass);
-			
-		}	
-	
-	
-	
-	public void paymentForm(String sheetName, int rowNum) throws InterruptedException {
-		
-		String name_on_card= reader.getCellData(sheetName, "name_on_card",rowNum); 
-		String card_number= reader.getCellData(sheetName, "card number", rowNum);
-		String month= reader.getCellData(sheetName, "month", rowNum);
-		String year= reader.getCellData(sheetName, "year", rowNum);
-		String security_code= reader.getCellData(sheetName, "security_code", rowNum);
-		String billing_country= reader.getCellData(sheetName, "country", rowNum);
-		String billing_street_address= reader.getCellData(sheetName, "street_address", rowNum);
-		String billing_street_address2= reader.getCellData(sheetName, "street_address2", rowNum);
-		String billing_city= reader.getCellData(sheetName, "city", rowNum);
-		String billing_pin_code= reader.getCellData(sheetName, "pincode", rowNum);
-		String billing_state= reader.getCellData(sheetName, "state", rowNum);
-		payment_usgbc( name_on_card , card_number, month, year, security_code, billing_country, billing_street_address, billing_street_address2, billing_city, billing_pin_code, billing_state);
-					
-	}
+
 	
 
 	public void receiptdownload() throws Exception {
@@ -85,8 +47,6 @@ public class UsgbcCore extends UsgbcWebLocators{
 			  
 			
 	}
-	
-	
 	
 	public void UsgbcCoreForm() throws Exception {
 		

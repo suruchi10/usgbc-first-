@@ -4,8 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import com.usgbc.dev.page.UsgbcWebLocators;
+import com.usgbc.utility.ReusableMethods;
 
-public class LoggedUser extends UsgbcWebLocators {
+public class LoggedUser extends ReusableMethods {
 	
 	 public LoggedUser(WebDriver driver) {
 		super(driver);
@@ -27,18 +28,7 @@ public class LoggedUser extends UsgbcWebLocators {
 	        	
 	        }
 	   }
-	
-	
-	
-	public void signInForm(String sheetName, int rowNum) throws InterruptedException {
-		
-		
-		String Eemail= reader.getCellData(sheetName, "email",rowNum); 
-		String Epass= reader.getCellData(sheetName, "password", rowNum);
-		Thread.sleep(3000);
-		signin_usgbc(Eemail,Epass);
-	
-	}
+
 	
 	public  void loggedUserVerification2() throws InterruptedException {
 	    Thread.sleep(4000);

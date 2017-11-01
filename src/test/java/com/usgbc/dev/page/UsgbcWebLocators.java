@@ -2,6 +2,7 @@ package com.usgbc.dev.page;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,10 +21,11 @@ public class UsgbcWebLocators extends Base{
 	}
 		
    /* web element locator for community_registration page*/
-	 @FindBy(linkText="Community Registration")WebElement communityRegistration;
-		public WebElement getcommunityRegistration() {
-			return communityRegistration;
-			}
+	
+	@FindBy(linkText="Community Registration")WebElement communityRegistration;
+	public WebElement getcommunityRegistration() {
+		return communityRegistration;
+	}
 	
     public static By Community_Name = By.id ("edit-community-name");
     public static WebElement getCommunity_Name() {
@@ -228,10 +230,12 @@ public class UsgbcWebLocators extends Base{
 		   billing_street_address.sendKeys(billing_street_add);
 		   billing_street_address2.sendKeys(billing_street_add2);
 		   billing_city.sendKeys( b_city);
+		   Thread.sleep(3000);
 		   billing_pin_code.sendKeys(billing_pin_cod);
 		   billing_state.sendKeys(billing_stat);
-		   submit_payment.click();
 		   Thread.sleep(3000);
+		   submit_payment.click();
+		   //Thread.sleep(3000);
 	     } catch (Exception e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
@@ -325,6 +329,11 @@ public class UsgbcWebLocators extends Base{
 	   			}
 	    
 	   	
+	    @FindBy(xpath=".//*[@id='block-drupal8-zymphonies-theme-content']/div/div/div/div/div[2]/div/span/a/div")WebElement LEEDReferenceGuide;
+	   	public WebElement getLEEDReferenceGuide() {
+	   			return LEEDReferenceGuide;
+	   			}
+	   	
 	    @FindBy(xpath=".//*[@id='block-drupal8-zymphonies-theme-content']/div/div/div/div/div[3]/div/span/a/div")WebElement GreenAppleLapelPins;
 	   	public WebElement getGreenAppleLapelPins() {
 	   			return GreenAppleLapelPins;
@@ -361,12 +370,15 @@ public class UsgbcWebLocators extends Base{
 	   	
 	    @FindBy(id="edit-attention-to")WebElement Contact_attention_to ;						
 		@FindBy(id="edit-company")WebElement Contact_Company;
-	   	@FindBy(name="shipping_address[country_code]")WebElement shipping_country;
-	 	@FindBy(xpath=".//*[@name='shipping_address[address_line1]']" )WebElement shipping_address;
-	 	@FindBy(xpath=".//*[@name='shipping_address[address_line2]']" )WebElement shipping_address_line2;
-		@FindBy(xpath=".//*[@name='shipping_address[locality]']" )WebElement Contact_City;
-	 	@FindBy(xpath=".//*[@id='edit-how-did-you-hear-2']" )WebElement how_did_you_hear;
+	   	@FindBy(xpath=".//*[@name='address[country_code]']")WebElement shipping_country;
+	 	@FindBy(xpath=".//*[@name='address[address_line1]']" )WebElement shipping_address;
+	 	@FindBy(xpath=".//*[@name='address[address_line2]']" )WebElement shipping_address_line2;
+		@FindBy(xpath=".//*[@name='address[locality]']" )WebElement Contact_City;
+	 	@FindBy(xpath=".//*[@id='edit-terms']" )WebElement terms;
 	 	@FindBy(xpath=".//*[@id='edit-submit']" )WebElement Contact_Continue;
+	 	public WebElement getContactContinue() {
+   			return Contact_Continue;
+   			}
 	 	
 	 	@FindBy(xpath="html/body/div[1]/div/div/div/div[2]/div" )WebElement status_message_usgbc_payment;
 	 	public WebElement getstatusMessageUsgbcPayment() {
@@ -376,27 +388,113 @@ public class UsgbcWebLocators extends Base{
 	 	public void contact_store(String attention,String company,String country,String s_address,String s_address_line2 ,String city) throws InterruptedException {
     		
 	 		Thread.sleep(3000);
+	 		((JavascriptExecutor)driver).executeScript("scroll(0,400)");
+			Thread.sleep(2000);
     		Contact_attention_to.sendKeys(attention);
     		Contact_Company.sendKeys(company);
-    		shipping_country.click();	
+    		//shipping_country.click();	
     		Select select = new Select(shipping_country);
 	 	    select.selectByVisibleText(country);
 	 	    Thread.sleep(3000);
     		shipping_address.sendKeys(s_address);
     		shipping_address_line2.sendKeys(s_address_line2);
     		Contact_City.sendKeys(city);
-    		how_did_you_hear.click();
+    		terms.click();
     		Contact_Continue.click();	
     	}
 	 	
-	 	//Membership module
 	 	
-		@FindBy(xpath=".//*[@id='usgbc-org-membership-contact-id']/div[2]/div/div[1]/div/div[1]/div/p/b" )WebElement membership_signin;
+	 	/*Cart*/ 
+	 	
+	 	 @FindBy(linkText="Shopping cart")WebElement ShoppingCart;
+		   	public WebElement getShoppingCart() {
+		   			return ShoppingCart;
+		   			}
+		   
+		 @FindBy(xpath=".//*[@id='block-drupal8-zymphonies-theme-content']/p" )WebElement UcCartEmpty;
+		 	public WebElement getUcCartEmpty() {
+	   			return UcCartEmpty;
+	   			}
+		 
+		@FindBy(xpath=".//*[@id='edit-continue-shopping']" )WebElement ContinueShopping;
+		 	public WebElement getContinueShopping() {
+	   			return ContinueShopping;
+	   			}
+		 	
+	    @FindBy(xpath=".//*[@class='button js-form-submit form-submit'][@value='Remove']")WebElement Remove;
+		 	public WebElement getRemove() {
+	   			return RemoveGreen;
+	   			}
+		 	
+		@FindBy(xpath=".//*[@id='edit-items-1-remove']" )WebElement RemoveGreen;
+		 	public WebElement getRemoveGreen() {
+	   			return RemoveGreen;
+	   			}
+		 	
+		@FindBy(xpath=".//*[@id='edit-items-0-qty']" )WebElement inputbox;
+		 	public WebElement getInputBox() {
+	   			return inputbox;
+	   			}
+		 	
+		 	
+	    @FindBy(xpath="html/body/div[2]/div/div[2]/div/div/div/div/form/div[3]/input[2]" )WebElement UpdateCart;
+		 	public WebElement getUpdateCart() {
+	   			return UpdateCart;
+	   			}
+		@FindBy(xpath=".//*[@id='edit-empty']" )WebElement EmptyCart;
+			public WebElement getEmptyCart() {
+				return EmptyCart;
+		   		}
+		@FindBy(xpath=".//*[@id='edit-submit']" )WebElement SubmitCart;
+			public WebElement getConfirmCart() {
+				return  SubmitCart;
+		   		}
+		@FindBy(xpath=".//*[@id='edit-cancel']" )WebElement CancelCart;
+			public WebElement getCancelCart() {
+				return  CancelCart;
+		   		}
+			
+		
+			
+			
+	 	
+	 	/*Membership module*/
+	 	
+	 	@FindBy(xpath=".//*[@id='usgbc-org-membership-contact-id']/div[2]/div/div[1]/div/div[1]/div/p/b" )WebElement ContactInfo;
+	 	public WebElement getContactinfo() {
+   			return ContactInfo;
+   			}
+	 	
+		@FindBy(xpath=".//*[@id='usgbc-org-membership-contact-id']/div[2]/div/div[1]/div/div[1]/div/p/b/a" )WebElement membership_signin;
 	 	public WebElement getMembershipSignin() {
    			return membership_signin;
    			}
-	 	@FindBy(xpath="html/body/div[1]/div/div/div/div/div" )WebElement user_doesnot_exist;
+	 	
+	 	@FindBy(xpath="html/body/div[1]/div/div/div/div/div" )WebElement user_not_exist;
 	 	public WebElement getUserNotExist() {
-   			return  user_doesnot_exist;
-   			}	   			
+   			return  user_not_exist;
+   			}	
+	 	
+	 	@FindBy(xpath=".//*[@id='edit-org-name']" )WebElement organistionName;
+	 	public WebElement getOrganistionName() {
+   			return  organistionName;
+   			}
+	 	@FindBy(xpath=".//*[@id='edit-website']" )WebElement membership_website;
+	 	public WebElement getwebsite() {
+   			return membership_website;
+   			}
+	 	@FindBy(xpath=".//*[@id='edit-industry-category']" )WebElement industry_category ;
+	 	public WebElement getIndustryCategory() {
+   			return industry_category;
+   			}
+	 	@FindBy(xpath=".//*[@id='edit-industry-sub-category']" )WebElement industry_sub_category;
+	 	public WebElement getIndustrySubCategory() {
+   			return industry_sub_category;
+   			}
+	 	@FindBy(xpath=".//*[@id='edit-revenue-scale']" )WebElement revenue_scale;
+	 	public WebElement getRevenueScale() {
+   			return revenue_scale;
+   			}
+	 	
+	 	
 }

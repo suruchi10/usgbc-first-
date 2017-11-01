@@ -10,10 +10,15 @@
           <include name="testUsgbcCore"/>
         </methods>
       </class> <!-- com.usgbc.dev.regression.UsgbcCoreTest -->
+      <class name="com.usgbc.dev.regression.MembershipTest">
+        <methods>
+          <include name="getDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- com.usgbc.dev.regression.MembershipTest -->
       <class name="com.usgbc.dev.regression.UsgbcStoreTest">
         <methods>
           <include name="getDriver"/>
-          <include name="testUsgbcStore2"/>
           <include name="closeDriver"/>
         </methods>
       </class> <!-- com.usgbc.dev.regression.UsgbcStoreTest -->

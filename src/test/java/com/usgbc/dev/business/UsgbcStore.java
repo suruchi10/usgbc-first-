@@ -30,9 +30,8 @@ public class UsgbcStore extends ReusableMethods {
 		 }
 	}
 	
-	
-	 
 	  /*----------------------------------------*/
+	
      public void UsgbcStoreModuleGreen() throws Exception {
 		
     	getAddToCartGreen().click();
@@ -46,15 +45,18 @@ public class UsgbcStore extends ReusableMethods {
 				 Thread.sleep(3000);
 				 String StoreContact_url = driver.getCurrentUrl();
 				 Assert.assertEquals(StoreContact_url, "https://test-dynamic-usgbc.pantheonsite.io/store/contact");	
+				 System.out.println("*****contact-payment-receipt*****");
 				 Contact_Form("Sheet1" , 3);
 				 Thread.sleep(3000);
 				 signInForm("signin",8);
 				 contactPaymentReceipt();	 
 			}else {
 				System.out.println("Add to cart link not clicked");
+				System.out.println("......"+ driver.getCurrentUrl() + "......" );
 			}
 	}
      /*----------------------------------------*/
+     
      public void UsgbcStoreModuleGreen2() throws Exception {
  		
      	getAddToCartGreen().click();
@@ -68,13 +70,15 @@ public class UsgbcStore extends ReusableMethods {
  				 Thread.sleep(3000);
  				 String StoreContact_url = driver.getCurrentUrl();
  				 Assert.assertEquals(StoreContact_url, "https://test-dynamic-usgbc.pantheonsite.io/store/contact");	
+ 				 System.out.println("******contact-payment-receipt*****");
  				 Contact_Form("Sheet1" , 3);
  				 Thread.sleep(3000);
  				 signInForm("signin",9);
  				 contactPaymentReceipt();
  				 
  			}else {
-				System.out.println("Checkout button is not clicked");
+				System.out.println("Add to cart link not clicked");
+				 System.out.println("......"+ driver.getCurrentUrl() + "......" );
 			}
  	} 
      
@@ -92,6 +96,7 @@ public class UsgbcStore extends ReusableMethods {
  				 Thread.sleep(3000);
  				 String StoreContact_url = driver.getCurrentUrl();
  				 Assert.assertEquals(StoreContact_url, "https://test-dynamic-usgbc.pantheonsite.io/store/contact");	
+ 				 System.out.println("*****contact-payment-receipt*****");
  				 //Contact_Form("Sheet1" , 3);
  				 getWebsite().click();
  				 getContinue().click();
@@ -100,6 +105,7 @@ public class UsgbcStore extends ReusableMethods {
  				 contactPaymentReceipt();	 
  			}else {
  				System.out.println("Add to cart link not clicked");
+ 				System.out.println("......"+ driver.getCurrentUrl() + "......" );
  			}
  	}
       /*----------------------------------------*/
@@ -117,6 +123,7 @@ public class UsgbcStore extends ReusableMethods {
   				 Thread.sleep(3000);
   				 String StoreContact_url = driver.getCurrentUrl();
   				 Assert.assertEquals(StoreContact_url, "https://test-dynamic-usgbc.pantheonsite.io/store/contact");	
+  				 System.out.println("*****contact-payment-receipt*****");
   				 // Contact_Form("Sheet1" , 3);
   				 getWebsite().click();
   				 getContinue().click();
@@ -125,7 +132,8 @@ public class UsgbcStore extends ReusableMethods {
   				 contactPaymentReceipt();
   				 
   			}else {
- 				System.out.println("Checkout button is not clicked");
+ 				System.out.println("Add to cart link not clicked");
+ 				System.out.println("......"+ driver.getCurrentUrl() + "......" );
  			}
   	} 
 }
